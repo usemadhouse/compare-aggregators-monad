@@ -92,7 +92,7 @@ This weighting approach ensures that aggregators are evaluated based on where th
 
 ## Supported Aggregators
 
-- **Madhouse** (Production, Primary Staging, Secondary Staging, Local)
+- **Madhouse**
 - **Monorail**
 - **OpenOcean**
 - **Eisen Finance** (with and without API key)
