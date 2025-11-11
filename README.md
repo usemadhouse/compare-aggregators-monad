@@ -95,7 +95,7 @@ This weighting approach ensures that aggregators are evaluated based on where th
 - **Madhouse**
 - **Monorail**
 - **OpenOcean**
-- **Eisen Finance** (with and without API key)
+- **Eisen Finance**
 - **Kuru** (requires Privy authentication token)
 - **Mace**
 - **Dirol**
