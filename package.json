@@ -1,0 +1,44 @@
+{
+  "name": "compare-competition-script",
+  "version": "1.0.0",
+  "description": "DEX aggregator comparison script for testing and benchmarking",
+  "module": "src/compare.ts",
+  "type": "module",
+  "scripts": {
+    "start": "bun run src/compare.ts",
+    "compare": "bun run src/compare.ts",
+    "start:no-sim": "bun run src/compare.ts --skip-simulation",
+    "fork": "./scripts/sh/start-fork.sh",
+    "lint": "bun run lint:prettier:check",
+    "lint:prettier:check": "prettier --no-error-on-unmatched-pattern --check \"**/*.{js,json,md,ts,yml}\" --ignore-path \".prettierignore\"",
+    "lint:prettier:write": "prettier --no-error-on-unmatched-pattern --write \"**/*.{js,json,md,ts,yml}\" --ignore-path \".prettierignore\"",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "csv-stringify": "^6.6.0",
+    "eslint": "^9.39.0",
+    "prompts": "^2.4.2",
+    "viem": "^2.21.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "@types/prompts": "^2.4.9",
+    "bun-types": "^1.2.23",
+    "prettier": "^3.6.2",
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "bun": ">=1.0.0"
+  },
+  "keywords": [
+    "dex",
+    "aggregator",
+    "comparison",
+    "blockchain",
+    "monad",
+    "testing",
+    "benchmark"
+  ],
+  "author": "",
+  "license": "MIT"
+}
