@@ -1,0 +1,1353 @@
+
+================================================================================
+SUMMARY REPORT
+================================================================================
+Mode: Full Test (all pairs × all amounts)
+Total Routes Tested: 3416
+Total Aggregators: 8
+Total Tests: 27328
+
+BEST QUOTE PERCENTAGE (by aggregator):
+--------------------------------------------------------------------------------
+  madhouse                 :  53.10%  (1814/3416 routes)
+  eisenFinance             :  19.88%  (679/3416 routes)
+  kuru                     :  13.85%  (473/3416 routes)
+  openocean                :   6.00%  (205/3416 routes)
+  mace                     :   3.66%  (125/3416 routes)
+  0x                       :   3.04%  (104/3416 routes)
+  monorail                 :   1.84%  (63/3416 routes)
+  dirol                    :   0.53%  (18/3416 routes)
+
+WEIGHTED BEST QUOTE PERCENTAGE (by aggregator):
+--------------------------------------------------------------------------------
+Weighted by pair importance (Tier 1-3) and trade size distribution
+Trade size weights: Small (40%), Medium (50%), Large (10%)
+Pair weights: T1-T1 (10x), T1-T2 (5x), T2-T2 (3x), T1-T3 (2x), T2-T3 (1x), T3-T3 (1x)
+--------------------------------------------------------------------------------
+  madhouse                 :  54.99%  (weighted: 3576.70/6504.50)
+  eisenFinance             :  20.49%  (weighted: 1332.60/6504.50)
+  kuru                     :  13.86%  (weighted: 901.60/6504.50)
+  mace                     :   4.68%  (weighted: 304.20/6504.50)
+  openocean                :   4.24%  (weighted: 275.60/6504.50)
+  0x                       :   2.45%  (weighted: 159.30/6504.50)
+  monorail                 :   1.29%  (weighted: 83.60/6504.50)
+  dirol                    :   0.50%  (weighted: 32.40/6504.50)
+
+BEST QUOTE BREAKDOWN BY PAIR AND AGGREGATOR:
+--------------------------------------------------------------------------------
+  BB-MON:
+    kuru                   : 41/45 (91.11%)
+    openocean              : 4/45 (8.89%)
+    0x                     : 0/45 (0.00%)
+    dirol                  : 0/45 (0.00%)
+    eisenFinance           : 0/45 (0.00%)
+    mace                   : 0/45 (0.00%)
+    madhouse               : 0/45 (0.00%)
+    monorail               : 0/45 (0.00%)
+
+  BEAN-MON:
+    madhouse               : 21/28 (75.00%)
+    eisenFinance           : 8/28 (28.57%)
+    kuru                   : 2/28 (7.14%)
+    0x                     : 0/28 (0.00%)
+    dirol                  : 0/28 (0.00%)
+    mace                   : 0/28 (0.00%)
+    monorail               : 0/28 (0.00%)
+    openocean              : 0/28 (0.00%)
+
+  CHOG-MON:
+    madhouse               : 17/19 (89.47%)
+    eisenFinance           : 2/19 (10.53%)
+    0x                     : 0/19 (0.00%)
+    dirol                  : 0/19 (0.00%)
+    kuru                   : 0/19 (0.00%)
+    mace                   : 0/19 (0.00%)
+    monorail               : 0/19 (0.00%)
+    openocean              : 0/19 (0.00%)
+
+  CHOG-USDC:
+    mace                   : 12/28 (42.86%)
+    madhouse               : 8/28 (28.57%)
+    kuru                   : 4/28 (14.29%)
+    monorail               : 4/28 (14.29%)
+    0x                     : 0/28 (0.00%)
+    dirol                  : 0/28 (0.00%)
+    eisenFinance           : 0/28 (0.00%)
+    openocean              : 0/28 (0.00%)
+
+  CHOG-USDT:
+    madhouse               : 18/28 (64.29%)
+    eisenFinance           : 9/28 (32.14%)
+    kuru                   : 1/28 (3.57%)
+    0x                     : 0/28 (0.00%)
+    dirol                  : 0/28 (0.00%)
+    mace                   : 0/28 (0.00%)
+    monorail               : 0/28 (0.00%)
+    openocean              : 0/28 (0.00%)
+
+  CHOG-WBTC:
+    eisenFinance           : 19/28 (67.86%)
+    kuru                   : 9/28 (32.14%)
+    0x                     : 0/28 (0.00%)
+    dirol                  : 0/28 (0.00%)
+    mace                   : 0/28 (0.00%)
+    madhouse               : 0/28 (0.00%)
+    monorail               : 0/28 (0.00%)
+    openocean              : 0/28 (0.00%)
+
+  CHOG-WETH:
+    madhouse               : 16/28 (57.14%)
+    eisenFinance           : 9/28 (32.14%)
+    kuru                   : 3/28 (10.71%)
+    0x                     : 0/28 (0.00%)
+    dirol                  : 0/28 (0.00%)
+    mace                   : 0/28 (0.00%)
+    monorail               : 0/28 (0.00%)
+    openocean              : 0/28 (0.00%)
+
+  CHOG-aprMON:
+    madhouse               : 19/28 (67.86%)
+    openocean              : 5/28 (17.86%)
+    dirol                  : 2/28 (7.14%)
+    eisenFinance           : 2/28 (7.14%)
+    0x                     : 0/28 (0.00%)
+    kuru                   : 0/28 (0.00%)
+    mace                   : 0/28 (0.00%)
+    monorail               : 0/28 (0.00%)
+
+  CHOG-gMON:
+    madhouse               : 16/28 (57.14%)
+    mace                   : 7/28 (25.00%)
+    eisenFinance           : 3/28 (10.71%)
+    openocean              : 2/28 (7.14%)
+    0x                     : 0/28 (0.00%)
+    dirol                  : 0/28 (0.00%)
+    kuru                   : 0/28 (0.00%)
+    monorail               : 0/28 (0.00%)
+
+  CHOG-sMON:
+    kuru                   : 7/28 (25.00%)
+    madhouse               : 7/28 (25.00%)
+    openocean              : 6/28 (21.43%)
+    eisenFinance           : 5/28 (17.86%)
+    0x                     : 3/28 (10.71%)
+    dirol                  : 0/28 (0.00%)
+    mace                   : 0/28 (0.00%)
+    monorail               : 0/28 (0.00%)
+
+  CHOG-shMON:
+    madhouse               : 26/28 (92.86%)
+    mace                   : 2/28 (7.14%)
+    0x                     : 0/28 (0.00%)
+    dirol                  : 0/28 (0.00%)
+    eisenFinance           : 0/28 (0.00%)
+    kuru                   : 0/28 (0.00%)
+    monorail               : 0/28 (0.00%)
+    openocean              : 0/28 (0.00%)
+
+  CULT-MON:
+    madhouse               : 17/28 (60.71%)
+    openocean              : 8/28 (28.57%)
+    dirol                  : 2/28 (7.14%)
+    0x                     : 1/28 (3.57%)
+    eisenFinance           : 0/28 (0.00%)
+    kuru                   : 0/28 (0.00%)
+    mace                   : 0/28 (0.00%)
+    monorail               : 0/28 (0.00%)
+
+  DAK-MON:
+    eisenFinance           : 19/34 (55.88%)
+    madhouse               : 14/34 (41.18%)
+    0x                     : 1/34 (2.94%)
+    dirol                  : 0/34 (0.00%)
+    kuru                   : 0/34 (0.00%)
+    mace                   : 0/34 (0.00%)
+    monorail               : 0/34 (0.00%)
+    openocean              : 0/34 (0.00%)
+
+  DUST-MON:
+    madhouse               : 14/28 (50.00%)
+    openocean              : 8/28 (28.57%)
+    kuru                   : 4/28 (14.29%)
+    monorail               : 2/28 (7.14%)
+    0x                     : 0/28 (0.00%)
+    dirol                  : 0/28 (0.00%)
+    eisenFinance           : 0/28 (0.00%)
+    mace                   : 0/28 (0.00%)
+
+  JAI-MON:
+    madhouse               : 19/28 (67.86%)
+    eisenFinance           : 16/28 (57.14%)
+    kuru                   : 2/28 (7.14%)
+    0x                     : 0/28 (0.00%)
+    dirol                  : 0/28 (0.00%)
+    mace                   : 0/28 (0.00%)
+    monorail               : 0/28 (0.00%)
+    openocean              : 0/28 (0.00%)
+
+  JERRY-MON:
+    kuru                   : 13/14 (92.86%)
+    monorail               : 1/14 (7.14%)
+    0x                     : 0/14 (0.00%)
+    dirol                  : 0/14 (0.00%)
+    eisenFinance           : 0/14 (0.00%)
+    mace                   : 0/14 (0.00%)
+    madhouse               : 0/14 (0.00%)
+    openocean              : 0/14 (0.00%)
+
+  KB-MON:
+    madhouse               : 30/51 (58.82%)
+    kuru                   : 11/51 (21.57%)
+    openocean              : 10/51 (19.61%)
+    0x                     : 0/51 (0.00%)
+    dirol                  : 0/51 (0.00%)
+    eisenFinance           : 0/51 (0.00%)
+    mace                   : 0/51 (0.00%)
+    monorail               : 0/51 (0.00%)
+
+  KESO-MON:
+    madhouse               : 25/28 (89.29%)
+    eisenFinance           : 3/28 (10.71%)
+    0x                     : 1/28 (3.57%)
+    dirol                  : 0/28 (0.00%)
+    kuru                   : 0/28 (0.00%)
+    mace                   : 0/28 (0.00%)
+    monorail               : 0/28 (0.00%)
+    openocean              : 0/28 (0.00%)
+
+  LBTC-MON:
+    kuru                   : 27/28 (96.43%)
+    madhouse               : 1/28 (3.57%)
+    0x                     : 0/28 (0.00%)
+    dirol                  : 0/28 (0.00%)
+    eisenFinance           : 0/28 (0.00%)
+    mace                   : 0/28 (0.00%)
+    monorail               : 0/28 (0.00%)
+    openocean              : 0/28 (0.00%)
+
+  MON-BB:
+    kuru                   : 29/29 (100.00%)
+    0x                     : 0/29 (0.00%)
+    dirol                  : 0/29 (0.00%)
+    eisenFinance           : 0/29 (0.00%)
+    mace                   : 0/29 (0.00%)
+    madhouse               : 0/29 (0.00%)
+    monorail               : 0/29 (0.00%)
+    openocean              : 0/29 (0.00%)
+
+  MON-BEAN:
+    madhouse               : 4/5 (80.00%)
+    eisenFinance           : 1/5 (20.00%)
+    0x                     : 0/5 (0.00%)
+    dirol                  : 0/5 (0.00%)
+    kuru                   : 0/5 (0.00%)
+    mace                   : 0/5 (0.00%)
+    monorail               : 0/5 (0.00%)
+    openocean              : 0/5 (0.00%)
+
+  MON-CHOG:
+    madhouse               : 16/16 (100.00%)
+    0x                     : 0/16 (0.00%)
+    dirol                  : 0/16 (0.00%)
+    eisenFinance           : 0/16 (0.00%)
+    kuru                   : 0/16 (0.00%)
+    mace                   : 0/16 (0.00%)
+    monorail               : 0/16 (0.00%)
+    openocean              : 0/16 (0.00%)
+
+  MON-CULT:
+    madhouse               : 28/28 (100.00%)
+    0x                     : 0/28 (0.00%)
+    dirol                  : 0/28 (0.00%)
+    eisenFinance           : 0/28 (0.00%)
+    kuru                   : 0/28 (0.00%)
+    mace                   : 0/28 (0.00%)
+    monorail               : 0/28 (0.00%)
+    openocean              : 0/28 (0.00%)
+
+  MON-DAK:
+    madhouse               : 18/20 (90.00%)
+    eisenFinance           : 2/20 (10.00%)
+    0x                     : 0/20 (0.00%)
+    dirol                  : 0/20 (0.00%)
+    kuru                   : 0/20 (0.00%)
+    mace                   : 0/20 (0.00%)
+    monorail               : 0/20 (0.00%)
+    openocean              : 0/20 (0.00%)
+
+  MON-DUST:
+    0x                     : 18/28 (64.29%)
+    openocean              : 10/28 (35.71%)
+    dirol                  : 0/28 (0.00%)
+    eisenFinance           : 0/28 (0.00%)
+    kuru                   : 0/28 (0.00%)
+    mace                   : 0/28 (0.00%)
+    madhouse               : 0/28 (0.00%)
+    monorail               : 0/28 (0.00%)
+
+  MON-JAI:
+    eisenFinance           : 19/28 (67.86%)
+    madhouse               : 7/28 (25.00%)
+    kuru                   : 2/28 (7.14%)
+    0x                     : 0/28 (0.00%)
+    dirol                  : 0/28 (0.00%)
+    mace                   : 0/28 (0.00%)
+    monorail               : 0/28 (0.00%)
+    openocean              : 0/28 (0.00%)
+
+  MON-JERRY:
+    kuru                   : 22/22 (100.00%)
+    0x                     : 0/22 (0.00%)
+    dirol                  : 0/22 (0.00%)
+    eisenFinance           : 0/22 (0.00%)
+    mace                   : 0/22 (0.00%)
+    madhouse               : 0/22 (0.00%)
+    monorail               : 0/22 (0.00%)
+    openocean              : 0/22 (0.00%)
+
+  MON-KB:
+    madhouse               : 24/41 (58.54%)
+    kuru                   : 17/41 (41.46%)
+    0x                     : 0/41 (0.00%)
+    dirol                  : 0/41 (0.00%)
+    eisenFinance           : 0/41 (0.00%)
+    mace                   : 0/41 (0.00%)
+    monorail               : 0/41 (0.00%)
+    openocean              : 0/41 (0.00%)
+
+  MON-KESO:
+    eisenFinance           : 27/28 (96.43%)
+    madhouse               : 23/28 (82.14%)
+    0x                     : 0/28 (0.00%)
+    dirol                  : 0/28 (0.00%)
+    kuru                   : 0/28 (0.00%)
+    mace                   : 0/28 (0.00%)
+    monorail               : 0/28 (0.00%)
+    openocean              : 0/28 (0.00%)
+
+  MON-LBTC:
+    madhouse               : 27/28 (96.43%)
+    kuru                   : 2/28 (7.14%)
+    0x                     : 0/28 (0.00%)
+    dirol                  : 0/28 (0.00%)
+    eisenFinance           : 0/28 (0.00%)
+    mace                   : 0/28 (0.00%)
+    monorail               : 0/28 (0.00%)
+    openocean              : 0/28 (0.00%)
+
+  MON-MONKA:
+    madhouse               : 3/6 (50.00%)
+    0x                     : 2/6 (33.33%)
+    kuru                   : 1/6 (16.67%)
+    dirol                  : 0/6 (0.00%)
+    eisenFinance           : 0/6 (0.00%)
+    mace                   : 0/6 (0.00%)
+    monorail               : 0/6 (0.00%)
+    openocean              : 0/6 (0.00%)
+
+  MON-OCTO:
+    madhouse               : 25/28 (89.29%)
+    kuru                   : 3/28 (10.71%)
+    0x                     : 0/28 (0.00%)
+    dirol                  : 0/28 (0.00%)
+    eisenFinance           : 0/28 (0.00%)
+    mace                   : 0/28 (0.00%)
+    monorail               : 0/28 (0.00%)
+    openocean              : 0/28 (0.00%)
+
+  MON-PINGU:
+    madhouse               : 20/28 (71.43%)
+    monorail               : 7/28 (25.00%)
+    openocean              : 1/28 (3.57%)
+    0x                     : 0/28 (0.00%)
+    dirol                  : 0/28 (0.00%)
+    eisenFinance           : 0/28 (0.00%)
+    kuru                   : 0/28 (0.00%)
+    mace                   : 0/28 (0.00%)
+
+  MON-USDC:
+    mace                   : 12/28 (42.86%)
+    madhouse               : 12/28 (42.86%)
+    eisenFinance           : 3/28 (10.71%)
+    kuru                   : 1/28 (3.57%)
+    0x                     : 0/28 (0.00%)
+    dirol                  : 0/28 (0.00%)
+    monorail               : 0/28 (0.00%)
+    openocean              : 0/28 (0.00%)
+
+  MON-USDT:
+    madhouse               : 37/45 (82.22%)
+    eisenFinance           : 8/45 (17.78%)
+    0x                     : 0/45 (0.00%)
+    dirol                  : 0/45 (0.00%)
+    kuru                   : 0/45 (0.00%)
+    mace                   : 0/45 (0.00%)
+    monorail               : 0/45 (0.00%)
+    openocean              : 0/45 (0.00%)
+
+  MON-WBTC:
+    madhouse               : 13/19 (68.42%)
+    eisenFinance           : 6/19 (31.58%)
+    0x                     : 0/19 (0.00%)
+    dirol                  : 0/19 (0.00%)
+    kuru                   : 0/19 (0.00%)
+    mace                   : 0/19 (0.00%)
+    monorail               : 0/19 (0.00%)
+    openocean              : 0/19 (0.00%)
+
+  MON-WETH:
+    madhouse               : 36/50 (72.00%)
+    kuru                   : 8/50 (16.00%)
+    eisenFinance           : 6/50 (12.00%)
+    0x                     : 0/50 (0.00%)
+    dirol                  : 0/50 (0.00%)
+    mace                   : 0/50 (0.00%)
+    monorail               : 0/50 (0.00%)
+    openocean              : 0/50 (0.00%)
+
+  MON-YAKI:
+    madhouse               : 32/37 (86.49%)
+    eisenFinance           : 4/37 (10.81%)
+    kuru                   : 1/37 (2.70%)
+    0x                     : 0/37 (0.00%)
+    dirol                  : 0/37 (0.00%)
+    mace                   : 0/37 (0.00%)
+    monorail               : 0/37 (0.00%)
+    openocean              : 0/37 (0.00%)
+
+  MON-aprMON:
+    madhouse               : 30/33 (90.91%)
+    eisenFinance           : 3/33 (9.09%)
+    0x                     : 0/33 (0.00%)
+    dirol                  : 0/33 (0.00%)
+    kuru                   : 0/33 (0.00%)
+    mace                   : 0/33 (0.00%)
+    monorail               : 0/33 (0.00%)
+    openocean              : 0/33 (0.00%)
+
+  MON-gMON:
+    madhouse               : 20/20 (100.00%)
+    0x                     : 0/20 (0.00%)
+    dirol                  : 0/20 (0.00%)
+    eisenFinance           : 0/20 (0.00%)
+    kuru                   : 0/20 (0.00%)
+    mace                   : 0/20 (0.00%)
+    monorail               : 0/20 (0.00%)
+    openocean              : 0/20 (0.00%)
+
+  MON-muBOND:
+    madhouse               : 20/28 (71.43%)
+    eisenFinance           : 7/28 (25.00%)
+    kuru                   : 1/28 (3.57%)
+    0x                     : 0/28 (0.00%)
+    dirol                  : 0/28 (0.00%)
+    mace                   : 0/28 (0.00%)
+    monorail               : 0/28 (0.00%)
+    openocean              : 0/28 (0.00%)
+
+  MON-sMON:
+    madhouse               : 18/38 (47.37%)
+    0x                     : 11/38 (28.95%)
+    openocean              : 5/38 (13.16%)
+    kuru                   : 4/38 (10.53%)
+    dirol                  : 0/38 (0.00%)
+    eisenFinance           : 0/38 (0.00%)
+    mace                   : 0/38 (0.00%)
+    monorail               : 0/38 (0.00%)
+
+  MON-shMON:
+    mace                   : 21/39 (53.85%)
+    madhouse               : 18/39 (46.15%)
+    eisenFinance           : 5/39 (12.82%)
+    0x                     : 0/39 (0.00%)
+    dirol                  : 0/39 (0.00%)
+    kuru                   : 0/39 (0.00%)
+    monorail               : 0/39 (0.00%)
+    openocean              : 0/39 (0.00%)
+
+  MON-wWETH:
+    madhouse               : 22/28 (78.57%)
+    eisenFinance           : 6/28 (21.43%)
+    0x                     : 0/28 (0.00%)
+    dirol                  : 0/28 (0.00%)
+    kuru                   : 0/28 (0.00%)
+    mace                   : 0/28 (0.00%)
+    monorail               : 0/28 (0.00%)
+    openocean              : 0/28 (0.00%)
+
+  MONKA-MON:
+    dirol                  : 1/2 (50.00%)
+    kuru                   : 1/2 (50.00%)
+    0x                     : 0/2 (0.00%)
+    eisenFinance           : 0/2 (0.00%)
+    mace                   : 0/2 (0.00%)
+    madhouse               : 0/2 (0.00%)
+    monorail               : 0/2 (0.00%)
+    openocean              : 0/2 (0.00%)
+
+  OCTO-MON:
+    madhouse               : 24/28 (85.71%)
+    kuru                   : 4/28 (14.29%)
+    0x                     : 0/28 (0.00%)
+    dirol                  : 0/28 (0.00%)
+    eisenFinance           : 0/28 (0.00%)
+    mace                   : 0/28 (0.00%)
+    monorail               : 0/28 (0.00%)
+    openocean              : 0/28 (0.00%)
+
+  PINGU-MON:
+    madhouse               : 24/28 (85.71%)
+    0x                     : 4/28 (14.29%)
+    dirol                  : 0/28 (0.00%)
+    eisenFinance           : 0/28 (0.00%)
+    kuru                   : 0/28 (0.00%)
+    mace                   : 0/28 (0.00%)
+    monorail               : 0/28 (0.00%)
+    openocean              : 0/28 (0.00%)
+
+  USDC-CHOG:
+    madhouse               : 11/28 (39.29%)
+    openocean              : 9/28 (32.14%)
+    monorail               : 5/28 (17.86%)
+    eisenFinance           : 3/28 (10.71%)
+    0x                     : 0/28 (0.00%)
+    dirol                  : 0/28 (0.00%)
+    kuru                   : 0/28 (0.00%)
+    mace                   : 0/28 (0.00%)
+
+  USDC-MON:
+    mace                   : 20/40 (50.00%)
+    madhouse               : 12/40 (30.00%)
+    monorail               : 7/40 (17.50%)
+    kuru                   : 1/40 (2.50%)
+    0x                     : 0/40 (0.00%)
+    dirol                  : 0/40 (0.00%)
+    eisenFinance           : 0/40 (0.00%)
+    openocean              : 0/40 (0.00%)
+
+  USDC-USDT:
+    madhouse               : 14/28 (50.00%)
+    openocean              : 10/28 (35.71%)
+    kuru                   : 8/28 (28.57%)
+    eisenFinance           : 5/28 (17.86%)
+    0x                     : 0/28 (0.00%)
+    dirol                  : 0/28 (0.00%)
+    mace                   : 0/28 (0.00%)
+    monorail               : 0/28 (0.00%)
+
+  USDC-WBTC:
+    kuru                   : 16/28 (57.14%)
+    madhouse               : 4/28 (14.29%)
+    eisenFinance           : 3/28 (10.71%)
+    openocean              : 3/28 (10.71%)
+    monorail               : 2/28 (7.14%)
+    0x                     : 0/28 (0.00%)
+    dirol                  : 0/28 (0.00%)
+    mace                   : 0/28 (0.00%)
+
+  USDC-WETH:
+    madhouse               : 24/28 (85.71%)
+    eisenFinance           : 5/28 (17.86%)
+    openocean              : 1/28 (3.57%)
+    0x                     : 0/28 (0.00%)
+    dirol                  : 0/28 (0.00%)
+    kuru                   : 0/28 (0.00%)
+    mace                   : 0/28 (0.00%)
+    monorail               : 0/28 (0.00%)
+
+  USDC-aprMON:
+    madhouse               : 19/28 (67.86%)
+    mace                   : 3/28 (10.71%)
+    0x                     : 2/28 (7.14%)
+    dirol                  : 2/28 (7.14%)
+    eisenFinance           : 1/28 (3.57%)
+    openocean              : 1/28 (3.57%)
+    kuru                   : 0/28 (0.00%)
+    monorail               : 0/28 (0.00%)
+
+  USDC-gMON:
+    madhouse               : 19/28 (67.86%)
+    mace                   : 7/28 (25.00%)
+    0x                     : 1/28 (3.57%)
+    eisenFinance           : 1/28 (3.57%)
+    dirol                  : 0/28 (0.00%)
+    kuru                   : 0/28 (0.00%)
+    monorail               : 0/28 (0.00%)
+    openocean              : 0/28 (0.00%)
+
+  USDC-sMON:
+    madhouse               : 12/28 (42.86%)
+    openocean              : 12/28 (42.86%)
+    mace                   : 3/28 (10.71%)
+    eisenFinance           : 1/28 (3.57%)
+    0x                     : 0/28 (0.00%)
+    dirol                  : 0/28 (0.00%)
+    kuru                   : 0/28 (0.00%)
+    monorail               : 0/28 (0.00%)
+
+  USDC-shMON:
+    madhouse               : 17/28 (60.71%)
+    mace                   : 8/28 (28.57%)
+    monorail               : 3/28 (10.71%)
+    0x                     : 0/28 (0.00%)
+    dirol                  : 0/28 (0.00%)
+    eisenFinance           : 0/28 (0.00%)
+    kuru                   : 0/28 (0.00%)
+    openocean              : 0/28 (0.00%)
+
+  USDT-CHOG:
+    madhouse               : 25/28 (89.29%)
+    eisenFinance           : 3/28 (10.71%)
+    0x                     : 0/28 (0.00%)
+    dirol                  : 0/28 (0.00%)
+    kuru                   : 0/28 (0.00%)
+    mace                   : 0/28 (0.00%)
+    monorail               : 0/28 (0.00%)
+    openocean              : 0/28 (0.00%)
+
+  USDT-MON:
+    kuru                   : 11/28 (39.29%)
+    madhouse               : 11/28 (39.29%)
+    eisenFinance           : 5/28 (17.86%)
+    dirol                  : 1/28 (3.57%)
+    0x                     : 0/28 (0.00%)
+    mace                   : 0/28 (0.00%)
+    monorail               : 0/28 (0.00%)
+    openocean              : 0/28 (0.00%)
+
+  USDT-USDC:
+    eisenFinance           : 16/28 (57.14%)
+    madhouse               : 13/28 (46.43%)
+    kuru                   : 4/28 (14.29%)
+    monorail               : 1/28 (3.57%)
+    0x                     : 0/28 (0.00%)
+    dirol                  : 0/28 (0.00%)
+    mace                   : 0/28 (0.00%)
+    openocean              : 0/28 (0.00%)
+
+  USDT-WBTC:
+    kuru                   : 24/28 (85.71%)
+    eisenFinance           : 3/28 (10.71%)
+    madhouse               : 2/28 (7.14%)
+    0x                     : 0/28 (0.00%)
+    dirol                  : 0/28 (0.00%)
+    mace                   : 0/28 (0.00%)
+    monorail               : 0/28 (0.00%)
+    openocean              : 0/28 (0.00%)
+
+  USDT-WETH:
+    madhouse               : 27/28 (96.43%)
+    dirol                  : 1/28 (3.57%)
+    0x                     : 0/28 (0.00%)
+    eisenFinance           : 0/28 (0.00%)
+    kuru                   : 0/28 (0.00%)
+    mace                   : 0/28 (0.00%)
+    monorail               : 0/28 (0.00%)
+    openocean              : 0/28 (0.00%)
+
+  USDT-aprMON:
+    madhouse               : 24/28 (85.71%)
+    dirol                  : 3/28 (10.71%)
+    openocean              : 1/28 (3.57%)
+    0x                     : 0/28 (0.00%)
+    eisenFinance           : 0/28 (0.00%)
+    kuru                   : 0/28 (0.00%)
+    mace                   : 0/28 (0.00%)
+    monorail               : 0/28 (0.00%)
+
+  USDT-gMON:
+    madhouse               : 25/48 (52.08%)
+    kuru                   : 22/48 (45.83%)
+    openocean              : 1/48 (2.08%)
+    0x                     : 0/48 (0.00%)
+    dirol                  : 0/48 (0.00%)
+    eisenFinance           : 0/48 (0.00%)
+    mace                   : 0/48 (0.00%)
+    monorail               : 0/48 (0.00%)
+
+  USDT-sMON:
+    madhouse               : 14/28 (50.00%)
+    kuru                   : 6/28 (21.43%)
+    openocean              : 4/28 (14.29%)
+    eisenFinance           : 3/28 (10.71%)
+    dirol                  : 1/28 (3.57%)
+    0x                     : 0/28 (0.00%)
+    mace                   : 0/28 (0.00%)
+    monorail               : 0/28 (0.00%)
+
+  USDT-shMON:
+    madhouse               : 25/28 (89.29%)
+    eisenFinance           : 2/28 (7.14%)
+    dirol                  : 1/28 (3.57%)
+    0x                     : 0/28 (0.00%)
+    kuru                   : 0/28 (0.00%)
+    mace                   : 0/28 (0.00%)
+    monorail               : 0/28 (0.00%)
+    openocean              : 0/28 (0.00%)
+
+  WBTC-CHOG:
+    eisenFinance           : 125/140 (89.29%)
+    0x                     : 15/140 (10.71%)
+    dirol                  : 0/140 (0.00%)
+    kuru                   : 0/140 (0.00%)
+    mace                   : 0/140 (0.00%)
+    madhouse               : 0/140 (0.00%)
+    monorail               : 0/140 (0.00%)
+    openocean              : 0/140 (0.00%)
+
+  WBTC-MON:
+    madhouse               : 23/28 (82.14%)
+    kuru                   : 5/28 (17.86%)
+    0x                     : 0/28 (0.00%)
+    dirol                  : 0/28 (0.00%)
+    eisenFinance           : 0/28 (0.00%)
+    mace                   : 0/28 (0.00%)
+    monorail               : 0/28 (0.00%)
+    openocean              : 0/28 (0.00%)
+
+  WBTC-USDC:
+    madhouse               : 19/28 (67.86%)
+    kuru                   : 7/28 (25.00%)
+    monorail               : 2/28 (7.14%)
+    0x                     : 0/28 (0.00%)
+    dirol                  : 0/28 (0.00%)
+    eisenFinance           : 0/28 (0.00%)
+    mace                   : 0/28 (0.00%)
+    openocean              : 0/28 (0.00%)
+
+  WBTC-USDT:
+    kuru                   : 18/28 (64.29%)
+    madhouse               : 8/28 (28.57%)
+    monorail               : 2/28 (7.14%)
+    0x                     : 0/28 (0.00%)
+    dirol                  : 0/28 (0.00%)
+    eisenFinance           : 0/28 (0.00%)
+    mace                   : 0/28 (0.00%)
+    openocean              : 0/28 (0.00%)
+
+  WBTC-WETH:
+    madhouse               : 15/28 (53.57%)
+    kuru                   : 13/28 (46.43%)
+    0x                     : 0/28 (0.00%)
+    dirol                  : 0/28 (0.00%)
+    eisenFinance           : 0/28 (0.00%)
+    mace                   : 0/28 (0.00%)
+    monorail               : 0/28 (0.00%)
+    openocean              : 0/28 (0.00%)
+
+  WBTC-aprMON:
+    madhouse               : 18/28 (64.29%)
+    eisenFinance           : 7/28 (25.00%)
+    kuru                   : 3/28 (10.71%)
+    0x                     : 0/28 (0.00%)
+    dirol                  : 0/28 (0.00%)
+    mace                   : 0/28 (0.00%)
+    monorail               : 0/28 (0.00%)
+    openocean              : 0/28 (0.00%)
+
+  WBTC-gMON:
+    madhouse               : 26/28 (92.86%)
+    eisenFinance           : 1/28 (3.57%)
+    kuru                   : 1/28 (3.57%)
+    0x                     : 0/28 (0.00%)
+    dirol                  : 0/28 (0.00%)
+    mace                   : 0/28 (0.00%)
+    monorail               : 0/28 (0.00%)
+    openocean              : 0/28 (0.00%)
+
+  WBTC-sMON:
+    kuru                   : 16/28 (57.14%)
+    madhouse               : 8/28 (28.57%)
+    eisenFinance           : 4/28 (14.29%)
+    0x                     : 0/28 (0.00%)
+    dirol                  : 0/28 (0.00%)
+    mace                   : 0/28 (0.00%)
+    monorail               : 0/28 (0.00%)
+    openocean              : 0/28 (0.00%)
+
+  WBTC-shMON:
+    madhouse               : 27/28 (96.43%)
+    eisenFinance           : 1/28 (3.57%)
+    0x                     : 0/28 (0.00%)
+    dirol                  : 0/28 (0.00%)
+    kuru                   : 0/28 (0.00%)
+    mace                   : 0/28 (0.00%)
+    monorail               : 0/28 (0.00%)
+    openocean              : 0/28 (0.00%)
+
+  WETH-CHOG:
+    eisenFinance           : 26/28 (92.86%)
+    madhouse               : 2/28 (7.14%)
+    0x                     : 0/28 (0.00%)
+    dirol                  : 0/28 (0.00%)
+    kuru                   : 0/28 (0.00%)
+    mace                   : 0/28 (0.00%)
+    monorail               : 0/28 (0.00%)
+    openocean              : 0/28 (0.00%)
+
+  WETH-USDC:
+    eisenFinance           : 20/28 (71.43%)
+    madhouse               : 13/28 (46.43%)
+    0x                     : 0/28 (0.00%)
+    dirol                  : 0/28 (0.00%)
+    kuru                   : 0/28 (0.00%)
+    mace                   : 0/28 (0.00%)
+    monorail               : 0/28 (0.00%)
+    openocean              : 0/28 (0.00%)
+
+  WETH-USDT:
+    eisenFinance           : 15/28 (53.57%)
+    madhouse               : 13/28 (46.43%)
+    0x                     : 0/28 (0.00%)
+    dirol                  : 0/28 (0.00%)
+    kuru                   : 0/28 (0.00%)
+    mace                   : 0/28 (0.00%)
+    monorail               : 0/28 (0.00%)
+    openocean              : 0/28 (0.00%)
+
+  WETH-WBTC:
+    kuru                   : 15/28 (53.57%)
+    madhouse               : 6/28 (21.43%)
+    eisenFinance           : 5/28 (17.86%)
+    monorail               : 2/28 (7.14%)
+    0x                     : 1/28 (3.57%)
+    dirol                  : 0/28 (0.00%)
+    mace                   : 0/28 (0.00%)
+    openocean              : 0/28 (0.00%)
+
+  WETH-aprMON:
+    madhouse               : 25/28 (89.29%)
+    eisenFinance           : 3/28 (10.71%)
+    0x                     : 0/28 (0.00%)
+    dirol                  : 0/28 (0.00%)
+    kuru                   : 0/28 (0.00%)
+    mace                   : 0/28 (0.00%)
+    monorail               : 0/28 (0.00%)
+    openocean              : 0/28 (0.00%)
+
+  WETH-sMON:
+    madhouse               : 27/28 (96.43%)
+    kuru                   : 1/28 (3.57%)
+    0x                     : 0/28 (0.00%)
+    dirol                  : 0/28 (0.00%)
+    eisenFinance           : 0/28 (0.00%)
+    mace                   : 0/28 (0.00%)
+    monorail               : 0/28 (0.00%)
+    openocean              : 0/28 (0.00%)
+
+  WETH-shMON:
+    madhouse               : 27/28 (96.43%)
+    0x                     : 1/28 (3.57%)
+    dirol                  : 0/28 (0.00%)
+    eisenFinance           : 0/28 (0.00%)
+    kuru                   : 0/28 (0.00%)
+    mace                   : 0/28 (0.00%)
+    monorail               : 0/28 (0.00%)
+    openocean              : 0/28 (0.00%)
+
+  YAKI-MON:
+    eisenFinance           : 4/5 (80.00%)
+    dirol                  : 1/5 (20.00%)
+    0x                     : 0/5 (0.00%)
+    kuru                   : 0/5 (0.00%)
+    mace                   : 0/5 (0.00%)
+    madhouse               : 0/5 (0.00%)
+    monorail               : 0/5 (0.00%)
+    openocean              : 0/5 (0.00%)
+
+  aprMON-CHOG:
+    madhouse               : 16/28 (57.14%)
+    eisenFinance           : 6/28 (21.43%)
+    openocean              : 3/28 (10.71%)
+    monorail               : 2/28 (7.14%)
+    mace                   : 1/28 (3.57%)
+    0x                     : 0/28 (0.00%)
+    dirol                  : 0/28 (0.00%)
+    kuru                   : 0/28 (0.00%)
+
+  aprMON-MON:
+    madhouse               : 12/28 (42.86%)
+    eisenFinance           : 11/28 (39.29%)
+    openocean              : 3/28 (10.71%)
+    monorail               : 2/28 (7.14%)
+    0x                     : 0/28 (0.00%)
+    dirol                  : 0/28 (0.00%)
+    kuru                   : 0/28 (0.00%)
+    mace                   : 0/28 (0.00%)
+
+  aprMON-USDC:
+    madhouse               : 15/28 (53.57%)
+    mace                   : 7/28 (25.00%)
+    openocean              : 3/28 (10.71%)
+    monorail               : 2/28 (7.14%)
+    eisenFinance           : 1/28 (3.57%)
+    0x                     : 0/28 (0.00%)
+    dirol                  : 0/28 (0.00%)
+    kuru                   : 0/28 (0.00%)
+
+  aprMON-USDT:
+    madhouse               : 19/28 (67.86%)
+    eisenFinance           : 6/28 (21.43%)
+    openocean              : 2/28 (7.14%)
+    monorail               : 1/28 (3.57%)
+    0x                     : 0/28 (0.00%)
+    dirol                  : 0/28 (0.00%)
+    kuru                   : 0/28 (0.00%)
+    mace                   : 0/28 (0.00%)
+
+  aprMON-WBTC:
+    eisenFinance           : 23/28 (82.14%)
+    dirol                  : 2/28 (7.14%)
+    kuru                   : 2/28 (7.14%)
+    0x                     : 1/28 (3.57%)
+    mace                   : 0/28 (0.00%)
+    madhouse               : 0/28 (0.00%)
+    monorail               : 0/28 (0.00%)
+    openocean              : 0/28 (0.00%)
+
+  aprMON-WETH:
+    madhouse               : 17/28 (60.71%)
+    eisenFinance           : 10/28 (35.71%)
+    kuru                   : 1/28 (3.57%)
+    0x                     : 0/28 (0.00%)
+    dirol                  : 0/28 (0.00%)
+    mace                   : 0/28 (0.00%)
+    monorail               : 0/28 (0.00%)
+    openocean              : 0/28 (0.00%)
+
+  aprMON-sMON:
+    openocean              : 16/28 (57.14%)
+    madhouse               : 10/28 (35.71%)
+    eisenFinance           : 2/28 (7.14%)
+    0x                     : 0/28 (0.00%)
+    dirol                  : 0/28 (0.00%)
+    kuru                   : 0/28 (0.00%)
+    mace                   : 0/28 (0.00%)
+    monorail               : 0/28 (0.00%)
+
+  gMON-CHOG:
+    madhouse               : 19/28 (67.86%)
+    eisenFinance           : 3/28 (10.71%)
+    monorail               : 3/28 (10.71%)
+    openocean              : 3/28 (10.71%)
+    0x                     : 0/28 (0.00%)
+    dirol                  : 0/28 (0.00%)
+    kuru                   : 0/28 (0.00%)
+    mace                   : 0/28 (0.00%)
+
+  gMON-MON:
+    madhouse               : 17/28 (60.71%)
+    0x                     : 4/28 (14.29%)
+    eisenFinance           : 4/28 (14.29%)
+    openocean              : 3/28 (10.71%)
+    dirol                  : 0/28 (0.00%)
+    kuru                   : 0/28 (0.00%)
+    mace                   : 0/28 (0.00%)
+    monorail               : 0/28 (0.00%)
+
+  gMON-USDC:
+    madhouse               : 18/28 (64.29%)
+    0x                     : 7/28 (25.00%)
+    eisenFinance           : 1/28 (3.57%)
+    monorail               : 1/28 (3.57%)
+    openocean              : 1/28 (3.57%)
+    dirol                  : 0/28 (0.00%)
+    kuru                   : 0/28 (0.00%)
+    mace                   : 0/28 (0.00%)
+
+  gMON-USDT:
+    madhouse               : 18/28 (64.29%)
+    eisenFinance           : 6/28 (21.43%)
+    monorail               : 2/28 (7.14%)
+    openocean              : 2/28 (7.14%)
+    0x                     : 0/28 (0.00%)
+    dirol                  : 0/28 (0.00%)
+    kuru                   : 0/28 (0.00%)
+    mace                   : 0/28 (0.00%)
+
+  gMON-WETH:
+    madhouse               : 41/64 (64.06%)
+    kuru                   : 10/64 (15.63%)
+    0x                     : 7/64 (10.94%)
+    eisenFinance           : 6/64 (9.38%)
+    dirol                  : 0/64 (0.00%)
+    mace                   : 0/64 (0.00%)
+    monorail               : 0/64 (0.00%)
+    openocean              : 0/64 (0.00%)
+
+  gMON-sMON:
+    madhouse               : 16/28 (57.14%)
+    openocean              : 5/28 (17.86%)
+    kuru                   : 3/28 (10.71%)
+    0x                     : 2/28 (7.14%)
+    eisenFinance           : 2/28 (7.14%)
+    dirol                  : 0/28 (0.00%)
+    mace                   : 0/28 (0.00%)
+    monorail               : 0/28 (0.00%)
+
+  gMON-shMON:
+    madhouse               : 21/28 (75.00%)
+    0x                     : 4/28 (14.29%)
+    eisenFinance           : 2/28 (7.14%)
+    monorail               : 1/28 (3.57%)
+    dirol                  : 0/28 (0.00%)
+    kuru                   : 0/28 (0.00%)
+    mace                   : 0/28 (0.00%)
+    openocean              : 0/28 (0.00%)
+
+  muBOND-MON:
+    madhouse               : 16/28 (57.14%)
+    eisenFinance           : 11/28 (39.29%)
+    dirol                  : 1/28 (3.57%)
+    0x                     : 0/28 (0.00%)
+    kuru                   : 0/28 (0.00%)
+    mace                   : 0/28 (0.00%)
+    monorail               : 0/28 (0.00%)
+    openocean              : 0/28 (0.00%)
+
+  sMON-CHOG:
+    madhouse               : 10/28 (35.71%)
+    eisenFinance           : 8/28 (28.57%)
+    openocean              : 7/28 (25.00%)
+    0x                     : 1/28 (3.57%)
+    mace                   : 1/28 (3.57%)
+    monorail               : 1/28 (3.57%)
+    dirol                  : 0/28 (0.00%)
+    kuru                   : 0/28 (0.00%)
+
+  sMON-MON:
+    eisenFinance           : 20/56 (35.71%)
+    kuru                   : 20/56 (35.71%)
+    openocean              : 10/56 (17.86%)
+    madhouse               : 4/56 (7.14%)
+    0x                     : 2/56 (3.57%)
+    dirol                  : 0/56 (0.00%)
+    mace                   : 0/56 (0.00%)
+    monorail               : 0/56 (0.00%)
+
+  sMON-USDC:
+    madhouse               : 15/28 (53.57%)
+    mace                   : 6/28 (21.43%)
+    openocean              : 5/28 (17.86%)
+    0x                     : 1/28 (3.57%)
+    monorail               : 1/28 (3.57%)
+    dirol                  : 0/28 (0.00%)
+    eisenFinance           : 0/28 (0.00%)
+    kuru                   : 0/28 (0.00%)
+
+  sMON-USDT:
+    madhouse               : 13/28 (46.43%)
+    eisenFinance           : 9/28 (32.14%)
+    openocean              : 5/28 (17.86%)
+    monorail               : 1/28 (3.57%)
+    0x                     : 0/28 (0.00%)
+    dirol                  : 0/28 (0.00%)
+    kuru                   : 0/28 (0.00%)
+    mace                   : 0/28 (0.00%)
+
+  sMON-WBTC:
+    kuru                   : 21/28 (75.00%)
+    eisenFinance           : 7/28 (25.00%)
+    0x                     : 0/28 (0.00%)
+    dirol                  : 0/28 (0.00%)
+    mace                   : 0/28 (0.00%)
+    madhouse               : 0/28 (0.00%)
+    monorail               : 0/28 (0.00%)
+    openocean              : 0/28 (0.00%)
+
+  sMON-WETH:
+    madhouse               : 20/28 (71.43%)
+    eisenFinance           : 4/28 (14.29%)
+    kuru                   : 4/28 (14.29%)
+    0x                     : 0/28 (0.00%)
+    dirol                  : 0/28 (0.00%)
+    mace                   : 0/28 (0.00%)
+    monorail               : 0/28 (0.00%)
+    openocean              : 0/28 (0.00%)
+
+  sMON-aprMON:
+    madhouse               : 11/28 (39.29%)
+    openocean              : 10/28 (35.71%)
+    eisenFinance           : 6/28 (21.43%)
+    0x                     : 1/28 (3.57%)
+    dirol                  : 0/28 (0.00%)
+    kuru                   : 0/28 (0.00%)
+    mace                   : 0/28 (0.00%)
+    monorail               : 0/28 (0.00%)
+
+  sMON-gMON:
+    madhouse               : 17/28 (60.71%)
+    openocean              : 6/28 (21.43%)
+    eisenFinance           : 4/28 (14.29%)
+    0x                     : 1/28 (3.57%)
+    dirol                  : 0/28 (0.00%)
+    kuru                   : 0/28 (0.00%)
+    mace                   : 0/28 (0.00%)
+    monorail               : 0/28 (0.00%)
+
+  sMON-shMON:
+    madhouse               : 16/28 (57.14%)
+    mace                   : 5/28 (17.86%)
+    openocean              : 4/28 (14.29%)
+    eisenFinance           : 1/28 (3.57%)
+    kuru                   : 1/28 (3.57%)
+    monorail               : 1/28 (3.57%)
+    0x                     : 0/28 (0.00%)
+    dirol                  : 0/28 (0.00%)
+
+  shMON-CHOG:
+    madhouse               : 21/28 (75.00%)
+    eisenFinance           : 4/28 (14.29%)
+    kuru                   : 3/28 (10.71%)
+    0x                     : 0/28 (0.00%)
+    dirol                  : 0/28 (0.00%)
+    mace                   : 0/28 (0.00%)
+    monorail               : 0/28 (0.00%)
+    openocean              : 0/28 (0.00%)
+
+  shMON-MON:
+    madhouse               : 25/42 (59.52%)
+    eisenFinance           : 8/42 (19.05%)
+    openocean              : 8/42 (19.05%)
+    mace                   : 1/42 (2.38%)
+    0x                     : 0/42 (0.00%)
+    dirol                  : 0/42 (0.00%)
+    kuru                   : 0/42 (0.00%)
+    monorail               : 0/42 (0.00%)
+
+  shMON-USDC:
+    0x                     : 8/28 (28.57%)
+    mace                   : 8/28 (28.57%)
+    monorail               : 7/28 (25.00%)
+    madhouse               : 3/28 (10.71%)
+    kuru                   : 2/28 (7.14%)
+    dirol                  : 0/28 (0.00%)
+    eisenFinance           : 0/28 (0.00%)
+    openocean              : 0/28 (0.00%)
+
+  shMON-USDT:
+    madhouse               : 18/28 (64.29%)
+    eisenFinance           : 6/28 (21.43%)
+    kuru                   : 4/28 (14.29%)
+    0x                     : 0/28 (0.00%)
+    dirol                  : 0/28 (0.00%)
+    mace                   : 0/28 (0.00%)
+    monorail               : 0/28 (0.00%)
+    openocean              : 0/28 (0.00%)
+
+  shMON-WBTC:
+    eisenFinance           : 22/28 (78.57%)
+    kuru                   : 6/28 (21.43%)
+    0x                     : 0/28 (0.00%)
+    dirol                  : 0/28 (0.00%)
+    mace                   : 0/28 (0.00%)
+    madhouse               : 0/28 (0.00%)
+    monorail               : 0/28 (0.00%)
+    openocean              : 0/28 (0.00%)
+
+  shMON-WETH:
+    madhouse               : 16/28 (57.14%)
+    eisenFinance           : 7/28 (25.00%)
+    kuru                   : 3/28 (10.71%)
+    0x                     : 2/28 (7.14%)
+    dirol                  : 0/28 (0.00%)
+    mace                   : 0/28 (0.00%)
+    monorail               : 0/28 (0.00%)
+    openocean              : 0/28 (0.00%)
+
+  shMON-gMON:
+    madhouse               : 19/28 (67.86%)
+    eisenFinance           : 6/28 (21.43%)
+    openocean              : 3/28 (10.71%)
+    0x                     : 0/28 (0.00%)
+    dirol                  : 0/28 (0.00%)
+    kuru                   : 0/28 (0.00%)
+    mace                   : 0/28 (0.00%)
+    monorail               : 0/28 (0.00%)
+
+  shMON-sMON:
+    madhouse               : 11/28 (39.29%)
+    eisenFinance           : 7/28 (25.00%)
+    openocean              : 5/28 (17.86%)
+    0x                     : 2/28 (7.14%)
+    kuru                   : 2/28 (7.14%)
+    mace                   : 1/28 (3.57%)
+    dirol                  : 0/28 (0.00%)
+    monorail               : 0/28 (0.00%)
+
+  wWETH-MON:
+    madhouse               : 16/28 (57.14%)
+    eisenFinance           : 12/28 (42.86%)
+    0x                     : 0/28 (0.00%)
+    dirol                  : 0/28 (0.00%)
+    kuru                   : 0/28 (0.00%)
+    mace                   : 0/28 (0.00%)
+    monorail               : 0/28 (0.00%)
+    openocean              : 0/28 (0.00%)
+
+BEST QUOTE PERCENTAGE - SMALL TRADES (by aggregator):
+--------------------------------------------------------------------------------
+  madhouse                 :  44.26%  (540/1220 routes)
+  eisenFinance             :  27.21%  (332/1220 routes)
+  kuru                     :  12.30%  (150/1220 routes)
+  mace                     :   8.93%  (109/1220 routes)
+  0x                       :   4.10%  (50/1220 routes)
+  openocean                :   2.21%  (27/1220 routes)
+  dirol                    :   1.48%  (18/1220 routes)
+  monorail                 :   0.90%  (11/1220 routes)
+
+BEST QUOTE PERCENTAGE - MEDIUM TRADES (by aggregator):
+--------------------------------------------------------------------------------
+  madhouse                 :  66.02%  (1047/1586 routes)
+  eisenFinance             :  15.32%  (243/1586 routes)
+  kuru                     :  11.73%  (186/1586 routes)
+  openocean                :   5.86%  (93/1586 routes)
+  0x                       :   2.27%  (36/1586 routes)
+  monorail                 :   0.95%  (15/1586 routes)
+  mace                     :   0.82%  (13/1586 routes)
+  dirol                    :   0.00%  (0/1586 routes)
+
+BEST QUOTE PERCENTAGE - LARGE TRADES (by aggregator):
+--------------------------------------------------------------------------------
+  madhouse                 :  37.21%  (227/610 routes)
+  kuru                     :  22.46%  (137/610 routes)
+  eisenFinance             :  17.05%  (104/610 routes)
+  openocean                :  13.93%  (85/610 routes)
+  monorail                 :   6.07%  (37/610 routes)
+  0x                       :   2.95%  (18/610 routes)
+  mace                     :   0.49%  (3/610 routes)
+  dirol                    :   0.00%  (0/610 routes)
+
+FASTEST RESPONSE PERCENTAGE (by aggregator):
+--------------------------------------------------------------------------------
+  monorail            : 70.49%  (2408/3416 routes)
+  kuru                : 15.54%  (531/3416 routes)
+  0x                  : 5.47%  (187/3416 routes)
+  madhouse            : 3.69%  (126/3416 routes)
+  dirol               : 2.81%  (96/3416 routes)
+  mace                : 1.96%  (67/3416 routes)
+  eisenFinance        : 0.47%  (16/3416 routes)
+  openocean           : 0.15%  (5/3416 routes)
+
+SUCCESS RATE (by aggregator):
+--------------------------------------------------------------------------------
+  madhouse                 :  97.01%  (3314/3416 successful)
+  kuru                     :  92.97%  (3176/3416 successful)
+  0x                       :  87.59%  (2992/3416 successful)
+  eisenFinance             :  83.46%  (2851/3416 successful)
+  openocean                :  82.55%  (2820/3416 successful)
+  monorail                 :  80.44%  (2748/3416 successful)
+  dirol                    :  79.98%  (2732/3416 successful)
+  mace                     :  10.04%  (343/3416 successful)
+
+P50 LATENCY (by aggregator):
+--------------------------------------------------------------------------------
+  monorail                 :    63.50ms
+  mace                     :   154.00ms
+  kuru                     :   200.00ms
+  dirol                    :   286.50ms
+  0x                       :   374.00ms
+  madhouse                 :   424.00ms
+  openocean                :   478.00ms
+  eisenFinance             :   559.00ms
+
+P95 LATENCY (by aggregator):
+--------------------------------------------------------------------------------
+  monorail                 :   455.65ms
+  0x                       :   854.45ms
+  eisenFinance             :  1260.50ms
+  madhouse                 :  1484.00ms
+  mace                     :  1544.70ms
+  openocean                :  1699.40ms
+  dirol                    :  2557.50ms
+  kuru                     :  2672.00ms
+
+P99 LATENCY (by aggregator):
+--------------------------------------------------------------------------------
+  monorail                 :  1129.27ms
+  0x                       :  1430.80ms
+  eisenFinance             :  1864.50ms
+  madhouse                 :  2424.88ms
+  mace                     :  2718.52ms
+  openocean                :  3007.05ms
+  kuru                     :  4660.25ms
+  dirol                    :  6180.69ms
+
+================================================================================
+PAIRWISE COMPARISON (One-on-One)
+================================================================================
+
+madhouse:
+  vs monorail            :  89.7% wins  (2694/3004 comparisons)
+  vs openocean           :  85.2% wins  (2605/3058 comparisons)
+  vs eisenFinance        :  73.6% wins  (2196/2985 comparisons)
+  vs kuru                :  76.7% wins  (2342/3055 comparisons)
+  vs mace                :  95.4% wins  (2838/2976 comparisons)
+  vs dirol               :  95.1% wins  (2867/3014 comparisons)
+  vs 0x                  :  85.2% wins  (2606/3060 comparisons)
+
+monorail:
+  vs madhouse            :  10.3% wins  (310/3004 comparisons)
+  vs openocean           :  31.5% wins  (810/2575 comparisons)
+  vs eisenFinance        :  29.0% wins  (854/2942 comparisons)
+  vs kuru                :  23.4% wins  (707/3020 comparisons)
+  vs mace                :  88.6% wins  (2255/2546 comparisons)
+  vs dirol               :  86.2% wins  (2182/2531 comparisons)
+  vs 0x                  :  43.3% wins  (1306/3019 comparisons)
+
+openocean:
+  vs madhouse            :  14.2% wins  (434/3058 comparisons)
+  vs monorail            :  66.8% wins  (1720/2575 comparisons)
+  vs eisenFinance        :  37.4% wins  (1120/2996 comparisons)
+  vs kuru                :  32.7% wins  (990/3024 comparisons)
+  vs mace                :  89.5% wins  (2326/2600 comparisons)
+  vs dirol               :  80.0% wins  (2059/2575 comparisons)
+  vs 0x                  :  49.2% wins  (1485/3019 comparisons)
+
+eisenFinance:
+  vs madhouse            :  24.2% wins  (722/2985 comparisons)
+  vs monorail            :  71.0% wins  (2088/2942 comparisons)
+  vs openocean           :  61.6% wins  (1846/2996 comparisons)
+  vs kuru                :  55.7% wins  (1691/3038 comparisons)
+  vs mace                :  92.1% wins  (2371/2573 comparisons)
+  vs dirol               :  84.7% wins  (2501/2952 comparisons)
+  vs 0x                  :  69.1% wins  (2101/3040 comparisons)
+
+kuru:
+  vs madhouse            :  23.7% wins  (724/3059 comparisons)
+  vs monorail            :  76.6% wins  (2318/3025 comparisons)
+  vs openocean           :  67.4% wins  (2040/3025 comparisons)
+  vs eisenFinance        :  44.5% wins  (1353/3043 comparisons)
+  vs mace                :  91.4% wins  (2611/2857 comparisons)
+  vs dirol               :  91.4% wins  (2760/3021 comparisons)
+  vs 0x                  :  63.2% wins  (1912/3025 comparisons)
+
+mace:
+  vs madhouse            :   4.6% wins  (138/2976 comparisons)
+  vs monorail            :  11.4% wins  (291/2546 comparisons)
+  vs openocean           :  10.5% wins  (274/2600 comparisons)
+  vs eisenFinance        :   7.9% wins  (202/2573 comparisons)
+  vs kuru                :   8.6% wins  (246/2851 comparisons)
+  vs dirol               :  12.4% wins  (312/2520 comparisons)
+  vs 0x                  :   9.7% wins  (265/2738 comparisons)
+
+dirol:
+  vs madhouse            :   5.2% wins  (157/3024 comparisons)
+  vs monorail            :  14.1% wins  (359/2541 comparisons)
+  vs openocean           :  20.1% wins  (517/2575 comparisons)
+  vs eisenFinance        :  15.5% wins  (459/2962 comparisons)
+  vs kuru                :   8.8% wins  (265/3020 comparisons)
+  vs mace                :  87.7% wins  (2220/2532 comparisons)
+  vs 0x                  :  30.4% wins  (915/3012 comparisons)
+
+0x:
+  vs madhouse            :  14.8% wins  (454/3060 comparisons)
+  vs monorail            :  56.7% wins  (1713/3019 comparisons)
+  vs openocean           :  50.1% wins  (1514/3019 comparisons)
+  vs eisenFinance        :  30.9% wins  (940/3040 comparisons)
+  vs kuru                :  37.0% wins  (1118/3025 comparisons)
+  vs mace                :  90.3% wins  (2473/2738 comparisons)
+  vs dirol               :  69.6% wins  (2097/3012 comparisons)
+
+
+================================================================================

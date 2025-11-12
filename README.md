@@ -2,17 +2,26 @@
 
 ## Overview
 
-The DEX Aggregator Comparison Script is a sophisticated benchmarking and analysis tool designed to objectively compare the performance of decentralized exchange (DEX) aggregators on the Monad testnet. This tool helps identify which aggregators provide the best trading outcomes for users by testing real-world trading scenarios across hundreds of token pairs and trade sizes.
+The DEX Aggregator Comparison Script is a sophisticated benchmarking and analysis tool designed to objectively compare
+the performance of decentralized exchange (DEX) aggregators on the Monad testnet. This tool helps identify which
+aggregators provide the best trading outcomes for users by testing real-world trading scenarios across hundreds of token
+pairs and trade sizes.
 
 ### Purpose
 
-In the competitive landscape of DEX aggregators, performance differences can significantly impact user returns. This script serves several key purposes:
+In the competitive landscape of DEX aggregators, performance differences can significantly impact user returns. This
+script serves several key purposes:
 
-- **Objective Performance Measurement**: Compare aggregators based on actual quote quality, response times, and transaction success rates rather than marketing claims
-- **Market-Realistic Testing**: Weight results based on real-world trading patterns, prioritizing the most commonly traded pairs and typical trade sizes
-- **Comprehensive Coverage**: Test across 147+ token pairs and 20 different trade sizes (from $1 to $1M) to understand performance across all market conditions
-- **Simulation Verification**: Optionally verify quotes through on-chain simulation to catch aggregators that provide inaccurate pricing
-- **Data-Driven Insights**: Generate detailed CSV reports and summary statistics to identify consistent performance leaders
+- **Objective Performance Measurement**: Compare aggregators based on actual quote quality, response times, and
+  transaction success rates rather than marketing claims
+- **Market-Realistic Testing**: Weight results based on real-world trading patterns, prioritizing the most commonly
+  traded pairs and typical trade sizes
+- **Comprehensive Coverage**: Test across 147+ token pairs and 20 different trade sizes (from $1 to $1M) to understand
+  performance across all market conditions
+- **Simulation Verification**: Optionally verify quotes through on-chain simulation to catch aggregators that provide
+  inaccurate pricing
+- **Data-Driven Insights**: Generate detailed CSV reports and summary statistics to identify consistent performance
+  leaders
 
 ### Performance Metrics
 
@@ -20,14 +29,19 @@ The script generates comprehensive performance statistics for each aggregator ac
 
 #### Quote Quality Metrics
 
-- **Best Quote Percentage**: How often an aggregator provides the best output amount compared to competitors for each route
-- **Weighted Best Quote Percentage**: Best quote percentage weighted by token pair importance (Tier 1-3) and trade size distribution (detailed below)
-- **Best Quote by Pair**: Performance breakdown showing which aggregators excel on specific token pairs (e.g., MON-USDC, WETH-WBTC)
-- **Best Quote by Trade Size**: Separate statistics for small (≤$100), medium ($100-$10K), and large (>$10K) trades to identify aggregators that specialize in different trade sizes
+- **Best Quote Percentage**: How often an aggregator provides the best output amount compared to competitors for each
+  route
+- **Weighted Best Quote Percentage**: Best quote percentage weighted by token pair importance (Tier 1-3) and trade size
+  distribution (detailed below)
+- **Best Quote by Pair**: Performance breakdown showing which aggregators excel on specific token pairs (e.g., MON-USDC,
+  WETH-WBTC)
+- **Best Quote by Trade Size**: Separate statistics for small (≤$100), medium ($100-$10K), and large (>$10K) trades to
+  identify aggregators that specialize in different trade sizes
 
 #### Speed & Reliability Metrics
 
-- **Fastest Response Percentage**: How often an aggregator returns the quickest response time among all tested aggregators
+- **Fastest Response Percentage**: How often an aggregator returns the quickest response time among all tested
+  aggregators
 - **Success Rate**: Percentage of requests that return valid quotes (status 200 with output > 0)
 - **P50 Latency (Median)**: The median response time - 50% of requests complete faster than this
 - **P95 Latency**: 95th percentile response time - only 5% of requests are slower than this
@@ -37,16 +51,22 @@ The script generates comprehensive performance statistics for each aggregator ac
 
 When running with `--simulation` flag, the script verifies quotes by executing them on a forked network:
 
-- **Simulation Revert Rate**: Percentage of successful quotes that actually fail (revert) when executed on-chain - lower is better
-- **Simulation Revert Rate by Trade Size**: Breakdown of revert rates across different trade sizes to identify problematic ranges
-- **Best Net Amount Percentage**: After accounting for actual gas costs from simulation, which aggregator provides the best net return to the user
-- **Average Quote vs Simulation Difference**: How accurate are the aggregator's quotes compared to actual on-chain execution
+- **Simulation Revert Rate**: Percentage of successful quotes that actually fail (revert) when executed on-chain - lower
+  is better
+- **Simulation Revert Rate by Trade Size**: Breakdown of revert rates across different trade sizes to identify
+  problematic ranges
+- **Best Net Amount Percentage**: After accounting for actual gas costs from simulation, which aggregator provides the
+  best net return to the user
+- **Average Quote vs Simulation Difference**: How accurate are the aggregator's quotes compared to actual on-chain
+  execution
 
 ### Weighted Scoring System
 
-To provide realistic performance metrics that reflect actual user value, the script implements a sophisticated weighted scoring system:
+To provide realistic performance metrics that reflect actual user value, the script implements a sophisticated weighted
+scoring system:
 
 #### Token Pair Weighting
+
 Token pairs are weighted based on their market importance across three tiers:
 
 - **Tier 1 Tokens** (Highest volume): MON, WETH, WBTC, USDC, USDT
@@ -54,6 +74,7 @@ Token pairs are weighted based on their market importance across three tiers:
 - **Tier 3 Tokens** (Lower volume): All other tokens
 
 **Pair Weight Multipliers:**
+
 - Tier 1 ↔ Tier 1: **10x** (e.g., USDC-USDT, WETH-WBTC)
 - Tier 1 ↔ Tier 2: **5x** (e.g., MON-gMON, USDC-sMON)
 - Tier 2 ↔ Tier 2: **3x** (e.g., gMON-sMON)
@@ -62,6 +83,7 @@ Token pairs are weighted based on their market importance across three tiers:
 - Tier 3 ↔ Tier 3: **1x** (baseline)
 
 #### Trade Size Weighting
+
 Trade sizes are categorized to reflect realistic trading volume distribution:
 
 - **Small trades** (≤$100): **40%** weight - Represents retail user activity
@@ -69,9 +91,13 @@ Trade sizes are categorized to reflect realistic trading volume distribution:
 - **Large trades** (>$10,000): **10%** weight - Whale/institutional activity
 
 #### Combined Weighted Score
-The final weighted best quote percentage multiplies pair weight by trade size weight, ensuring that an aggregator's score on a $100 USDC→USDT trade (Tier 1-1, Small) carries significantly more importance than a $50,000 obscure→obscure trade (Tier 3-3, Large).
 
-This weighting approach ensures that aggregators are evaluated based on where they matter most: the pairs and trade sizes that real users actually transact.
+The final weighted best quote percentage multiplies pair weight by trade size weight, ensuring that an aggregator's
+score on a $100 USDC→USDT trade (Tier 1-1, Small) carries significantly more importance than a $50,000 obscure→obscure
+trade (Tier 3-3, Large).
+
+This weighting approach ensures that aggregators are evaluated based on where they matter most: the pairs and trade
+sizes that real users actually transact.
 
 ## Features
 
@@ -99,7 +125,7 @@ This weighting approach ensures that aggregators are evaluated based on where th
 - **Kuru** (requires Privy authentication token)
 - **Mace**
 - **Dirol**
-- **0x**
+- **0x** (requires API key)
 
 ## Prerequisites
 
@@ -596,7 +622,6 @@ DEFAULT_SENDER_ACCOUNT=0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266
 DEFAULT_GAS_PRICE=<your_gas_price>
 
 # API Keys (optional - some aggregators work without API keys)
-EISEN_API_KEY=<eisen_api_key>
 ZEROX_API_KEY=<zerox_api_key>
 
 # Required for Kuru: Privy authentication token
